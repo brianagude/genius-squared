@@ -1,31 +1,200 @@
 <!DOCTYPE html>
   <head>
-    <title>Gulp Template</title>
+    <title>Genius Squared</title>
 
     <!-- default meta tags -->
     <meta charset="UTF-8">
-    <meta name="description" content="Base boilerplate for creating static websites using gulp">
-    <meta name="keywords" content="gulp, boilerplate">
+    <meta name="description" content="Atlanta based creative agency specializing in branding and web development">
+    <meta name="keywords" content="atlanta, web development, branding, advertising, web design, agency, creative">
     <meta name="author" content="briana gude">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- twitter meta tags -->
     <meta name="twitter:card" content="summary" />
-    <meta name="twitter:site" content="@brianagude" />
-    <meta name="twitter:creator" content="@brianagude" />
-    <meta property="og:url" content="https://brianagude.com/" />
-    <meta property="og:title" content="Gulp Template" />
-    <meta property="og:description" content="Base boilerplate for creating static websites using gulp" />
+    <meta name="twitter:site" content="@geniussquared" />
+    <meta name="twitter:creator" content="@geniussquared" />
+
+    <meta property="og:url" content="https://geniussquar.ed/" />
+    <meta property="og:title" content="Genius Squared" />
+    <meta property="og:description" content="Atlanta based creative agency specializing in branding and web development" />
     <meta property="og:image" content="./img/logo.svg" />
 
     <!-- styles etc. -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto|Space+Mono"
+      rel="stylesheet">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="icon" type="image/png" sizes="32x32" href="./favicon.png">
   </head>
 
   <body class='homepage'>
-   <h2>hello briana</h2>
-
+    <header>
+      <h1>Genius Squared</h1>
+    </header>
+    
+    <nav class="filters">
+      <ul class="filters-list">
+        <li><a href="#" data-filter=".branding">branding</a></li>
+        <li><a href="du.html" data-filter=".du">du</a></li>
+        <li><a href="these.html" data-filter=".these">these</a></li>
+        <li><a href="are.html" data-filter=".are">are</a></li>
+        <li><a href="your.html" data-filter=".your">your</a></li>
+        <li><a href="categories.html" data-filter=".categories">categories</a></li>
+        <li><a href="all.html" class="selected" data-filter=".photo">all</a></li>
+        <li><a href="contact.html" data-filter=".contact">contact</a></li>
+      </ul>
+    </nav>
+    
+    
+    
+    <section class="container ">
+    
+    
+      <div class="contact container2">
+        <form id="contact" action="" method="post">
+          <h3>Contact</h3>
+          <h4>I'm available for local projects as well as potential employment
+            opportunities. Use this form to inquire about rates and availability, or
+            just to say hi!</h4>
+          <fieldset>
+            <input placeholder="Your name" type="text" tabindex="1" required
+              autofocus>
+          </fieldset>
+          <fieldset>
+            <input placeholder="Your Email Address" type="email" tabindex="2"
+              required>
+          </fieldset>
+          <fieldset>
+            <input placeholder="Your Phone Number" type="tel" tabindex="3" required>
+          </fieldset>
+          <fieldset>
+            <input placeholder="Your Web Site starts with http://" type="url"
+              tabindex="4" required>
+          </fieldset>
+          <fieldset>
+            <textarea placeholder="Type your Message Here...." tabindex="5"
+              required></textarea>
+          </fieldset>
+          <fieldset>
+            <button name="submit" type="submit" id="contact-submit"
+              data-submit="...Sending">Submit</button>
+          </fieldset>
+        </form>
+      </div>
+    
+    
+    
+    
+    
+      <div class="row1">
+        <div class="photo branding">
+          <a href="#">
+            <img class="photos" src="https://picsum.photos/200">
+            <img src="https://picsum.photos/200">
+          </a>
+        </div>
+        <div class="photo branding">
+          <a href="#">
+            <img class="photos" src="fhttps://picsum.photos/200">
+            <img src="https://picsum.photos/200">
+          </a>
+        </div>
+        <div class="photo du">
+          <a href="#">
+            <img class="photos" src="https://picsum.photos/200">
+            <img src="https://picsum.photos/200">
+          </a>
+        </div>
+        <div class="photo these">
+          <a href="#">
+            <img class="photos" src="0https://picsum.photos/200">
+            <img src="https://picsum.photos/200">
+          </a>
+        </div>
+      </div>
+    
+      <div class="row2">
+        <div class="photo are">
+          <a href="#">
+            <img class="photos" src="https://picsum.photos/200">
+            <img src="https://picsum.photos/200">
+          </a>
+        </div>
+        <div class="photo are">
+          <a href="#">
+            <img class="photos" src="https://picsum.photos/200">
+            <img src="https://picsum.photos/200">
+          </a>
+        </div>
+        <div class="photo categories">
+          <a href="#">
+            <img class="photos" src="https://picsum.photos/200">
+            <img src="https://picsum.photos/200">
+          </a>
+        </div>
+      </div>
+    
+    
+      <div class="row3">
+        <div class="photo categories">
+          <a href="#">
+            <img class="photos" src="https://picsum.photos/200">
+            <img src="https://picsum.photos/200">
+          </a>
+        </div>
+        <div class="photo categories">
+          <a href="#">
+            <img class="photos" src="https://picsum.photos/200">
+            <img src="https://picsum.photos/200">
+          </a>
+        </div>
+      </div>
+    
+      <div class="row4">
+        <div class="photo branding">
+          <a href="#">
+            <img class="photos" src="https://picsum.photos/200">
+            <img src="https://picsum.photos/200">
+          </a>
+        </div>
+        <div class="photo du">
+          <a href="#">
+            <img class="photos" src="https://picsum.photos/200">
+            <img src="https://picsum.photos/200">
+          </a>
+        </div>
+        <div class="photo these">
+          <a href="#">
+            <img class="photos" src="9https://picsum.photos/200">
+            <img src="https://picsum.photos/200">
+          </a>
+        </div>
+      </div>
+    
+      <div class="row5">
+        <div class="photo are">
+          <a href="#">
+            <img class="photos" src="https://picsum.photos/200">
+            <img src="https://picsum.photos/200">
+          </a>
+        </div>
+        <div class="photo are">
+          <a href="#">
+            <img class="photos" src="https://picsum.photos/200">
+            <img src="https://picsum.photos/200">
+          </a>
+        </div>
+      </div>
+    
+    
+    </section>
+    
+    <div class="progress">
+      <div class="bar"></div>
+    </div>
+    
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"
+      integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="
+      crossorigin="anonymous"></script>
     <script src='./js/global.js'></script>
   </body>
 </html>
