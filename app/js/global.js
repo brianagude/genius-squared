@@ -3,6 +3,7 @@ $( document ).ready(function() {
       var filter = $(this).attr('data-filter')
       
       $('.contact').hide()
+      $('.about').hide()
       $('.photo').hide()
       $(filter).show()
       
