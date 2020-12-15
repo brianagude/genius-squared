@@ -111,12 +111,13 @@ body {
   line-height: 1;
   font-size: 1em;
   overflow-x: hidden;
+  min-height: 100vh;
 }
 
 button {
   background: none;
-  border: none; 
-  box-shadow: none; 
+  border: none;
+  box-shadow: none;
   cursor: pointer;
 }
 
@@ -134,7 +135,7 @@ blockquote:before,
 blockquote:after,
 q:before,
 q:after {
-  content: '';
+  content: "";
   content: none;
 }
 
@@ -144,7 +145,6 @@ table {
 }
 
 * {
-
   padding: 0;
   margin: 0;
 
@@ -155,7 +155,8 @@ table {
   }
 }
 
-img, iframe {
+img,
+iframe {
   vertical-align: bottom;
   max-width: 100%;
 }
@@ -164,4 +165,6 @@ a {
   display: inline-block;
 }
 
-div { width: 100%; }
+div {
+  width: 100%;
+}

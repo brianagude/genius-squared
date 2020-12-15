@@ -20,195 +20,98 @@
     <meta property="og:image" content="./img/logo.svg" />
 
     <!-- styles etc. -->
-    <link href="https://fonts.googleapis.com/css?family=Roboto|Space+Mono"
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Goldman:wght@400;700&display=swap"
       rel="stylesheet">
     <link rel="stylesheet" href="./css/style.css">
-    <link rel="icon" type="image/png" sizes="32x32" href="./favicon.png">
+
+    <link rel="apple-touch-icon" sizes="120x120" href="./img/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./img/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./img/favicons/favicon-16x16.png">
+    <link rel="manifest" href="./img/favicons/site.webmanifest">
+    <link rel="mask-icon" href="./img/favicons/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
   </head>
 
   <body class='homepage'>
     <header>
-      <h1>Genius Squared</h1>
+      <div class='container'>
+        <img class='header-logo' src="./img/logo.svg">
+        <nav>
+          <button data-page='bio' class='active'>Welcome</button>
+          <button data-page='projects'>Projects</button>
+        </nav>
+      </div>
     </header>
-    
-    <nav class="filters">
-      <ul class="filters-list">
-        <li><a href="#" data-filter=".branding">branding</a></li>
-        <!-- <li><a href="du.html" data-filter=".du">du</a></li> -->
-        <!-- <li><a href="these.html" data-filter=".these">these</a></li> -->
-        <li><a href="are.html" data-filter=".are">web development</a></li>
-        <!-- <li><a href="your.html" data-filter=".your">your</a></li> -->
-        <li><a href="categories.html" data-filter=".categories">web design</a></li>
-        <li><a href="all.html" class="selected" data-filter=".photo">all</a></li>
-        <li><a href="#0" data-filter=".about">about</a></li>
-        <li><a href="#0" data-filter=".contact">contact</a></li>
-      </ul>
-    </nav>
-    
-    
-    
-    <section class="container ">
-    
-    
-      <div class="contact container2">
-        <form id="contact" action="" method="post">
-          <h3>Contact Us</h3>
-          <p>Let's work on your next project!</p>
-          <fieldset>
-            <input 
-              placeholder="Your name" 
-              type="text" 
-              tabindex="1" 
-              required
-              autofocus
-            />
-          </fieldset>
-          <fieldset>
-              <input 
-                placeholder="Your current website url" 
-                type="text" 
-                tabindex="1" 
-                required 
-                autofocus 
-              />
-          </fieldset>
-          <fieldset>
-            <textarea 
-              placeholder="Type your Message Here...." 
-              tabindex="5"
-              required
-            ></textarea>
-          </fieldset>
-          <fieldset>
-            <button 
-              name="submit" 
-              type="submit" 
-              id="contact-submit"
-              data-submit="...Sending"
-            >
-            Submit
-          </button>
-          </fieldset>
-        </form>
-      </div>
-      <div class="about container2">
-        <h3>About Us</h3>
-        <p>
-          we're simply....the shit no toilet paper.
-        </p>
-      </div>
 
-    
-    
-    
-    
-    
-      <div class="row1">
-        <div class="photo branding">
-          <a href="#">
-            <img class="photos" src="https://picsum.photos/200">
-            <img src="https://picsum.photos/200">
-          </a>
-        </div>
-        <div class="photo branding">
-          <a href="#">
-            <img class="photos" src="fhttps://picsum.photos/200">
-            <img src="https://picsum.photos/200">
-          </a>
-        </div>
-        <div class="photo are">
-          <a href="#">
-            <img class="photos" src="https://picsum.photos/200">
-            <img src="https://picsum.photos/200">
-          </a>
-        </div>
-        <div class="photo categories">
-          <a href="#">
-            <img class="photos" src="0https://picsum.photos/200">
-            <img src="https://picsum.photos/200">
-          </a>
+    <section class='page-section welcome-section'>
+      <div class='container'>
+        <div class='content'>
+          <p>Genius Squared is a design studio founded by two Genius’ - duh. Genius
+            Squared is a design studio founded by two Genius’ - duh. Genius Squared is a
+            design
+            studio founded by two Genius’ - duh. Genius Squared is a design studio founded
+            by two Genius’ - duh. Genius Squared is a design studio founded by two Genius’
+            - duh.
+          </p>
+          
+          <p>Hit us up at hello@geniussquared.com</p>
         </div>
       </div>
-    
-      <div class="row2">
-        <div class="photo are">
-          <a href="#">
-            <img class="photos" src="https://picsum.photos/200">
-            <img src="https://picsum.photos/200">
-          </a>
-        </div>
-        <div class="photo are">
-          <a href="#">
-            <img class="photos" src="https://picsum.photos/200">
-            <img src="https://picsum.photos/200">
-          </a>
-        </div>
-        <div class="photo categories">
-          <a href="#">
-            <img class="photos" src="https://picsum.photos/200">
-            <img src="https://picsum.photos/200">
-          </a>
-        </div>
-      </div>
-    
-    
-      <div class="row3">
-        <div class="photo categories">
-          <a href="#">
-            <img class="photos" src="https://picsum.photos/200">
-            <img src="https://picsum.photos/200">
-          </a>
-        </div>
-        <div class="photo categories">
-          <a href="#">
-            <img class="photos" src="https://picsum.photos/200">
-            <img src="https://picsum.photos/200">
-          </a>
-        </div>
-      </div>
-    
-      <div class="row4">
-        <div class="photo branding">
-          <a href="#">
-            <img class="photos" src="https://picsum.photos/200">
-            <img src="https://picsum.photos/200">
-          </a>
-        </div>
-        <div class="photo are">
-          <a href="#">
-            <img class="photos" src="https://picsum.photos/200">
-            <img src="https://picsum.photos/200">
-          </a>
-        </div>
-        <div class="photo are">
-          <a href="#">
-            <img class="photos" src="9https://picsum.photos/200">
-            <img src="https://picsum.photos/200">
-          </a>
-        </div>
-      </div>
-    
-      <div class="row5">
-        <div class="photo are">
-          <a href="#">
-            <img class="photos" src="https://picsum.photos/200">
-            <img src="https://picsum.photos/200">
-          </a>
-        </div>
-        <div class="photo branding">
-          <a href="#">
-            <img class="photos" src="https://picsum.photos/200">
-            <img src="https://picsum.photos/200">
-          </a>
-        </div>
-      </div>
-    
-    
     </section>
+
+    <section class='page-section projects-section'>
+      <div class='container'>
+        <div class='project-container'>
+          <div class='project'>
+            <img class='project-img' src="./img/placeholder.jpg">
+            <div class='project-details'>
+              <h4 class='project-title'>Glosshood</h4>
+              <p class='project-bio'>E-commerce web app</p>
+              <p class='project-date'>2020</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class='page-section finale-section'>
+      <div class='container'>
+        <div class='content'>
+          <p>FIN</p>
+        </div>
+      </div>
+    </section>
+
+
+    <footer>
+      <div class='container'>
+        <nav>
+          <button data-page='bio'>Welcome</button>
+          <button data-page='projects'>Projects</button>
+        </nav>
+      </div>
+    </footer>
     
-    <div class="progress">
-      <div class="bar"></div>
+    <div class="progress progress-top">
+      <div class="bar bar-top"></div>
     </div>
+    
+    <div class="progress progress-right">
+      <div class="bar bar-right"></div>
+    </div>
+    
+    <div class="progress progress-left">
+      <div class="bar bar-left"></div>
+    </div>
+    
+    <div class="progress progress-bottom">
+      <div class="bar bar-bottom"></div>
+    </div>
+
+
     
     <script src="https://code.jquery.com/jquery-1.12.4.min.js"
       integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="
