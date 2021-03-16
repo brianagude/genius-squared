@@ -37,8 +37,6 @@ function drawCoordinates(x,y){
 $(document).ready(function() {
   setTimeout(function() {
       drawCoordinates(Math.random() * window.innerWidth, Math.random() * window.innerHeight);
-      console.log('dot')
-
   }, 2000);
 });
 

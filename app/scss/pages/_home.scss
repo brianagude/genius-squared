@@ -9,6 +9,7 @@
     position: absolute;
     top: 16px;
     right: 16px;
+    z-index: 1;
 
     &:hover {
       &:before,
@@ -43,6 +44,8 @@
     align-items: center;
 
     a {
+      position: relative;
+      z-index: 1;
       &:hover {
         &:before,
         &:after {
@@ -51,10 +54,5 @@
         }
       }
     }
-  }
-
-  main {
-    position: relaitve;
-    z-index: 1;
   }
 }
