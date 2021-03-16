@@ -1,0 +1,60 @@
+.homepage {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+
+  .mail-link {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+
+    &:hover {
+      &:before,
+      &:after {
+        content: '*';
+        color: $pink;
+      }
+    }
+  }
+
+  .intro {
+    .media-block { 
+      margin: auto; 
+      display: flex;
+      justify-content: center;
+    }
+
+    img {
+      width: 136px; 
+    }
+  }
+
+  .description {
+    margin-top: 16px;
+    text-align: center;
+  }
+
+  .projects {
+    margin-top: 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    a {
+      &:hover {
+        &:before,
+        &:after {
+          content: '*';
+          color: $green;
+        }
+      }
+    }
+  }
+
+  main {
+    position: relaitve;
+    z-index: 1;
+  }
+}
