@@ -1,39 +1,36 @@
-$( document ).ready(function() {
-    $('.filters-list a').on('click', function() {
-      var filter = $(this).attr('data-filter')
-      
-      $('.contact').hide()
-      $('.about').hide()
-      $('.photo').hide()
-      $(filter).show()
-      
-    $('.filters-list a').removeClass('selected')
-      
-    $(this).addClass('selected')
+const canvas = document.querySelector('canvas')
 
-    return false 
-      
-    })
+canvas.width = window.innerWidth
+canvas.height = window.innerHeight
 
-    $(document).on('scroll', function() {
-      var pixelsFromTop = $(document).scrollTop()
+const ctx = canvas.getContext('2d')
 
-      if (pixelsFromTop > 50) {
-        $('header').addClass('hidden')
-      } else {
-        $('header').removeClass('hidden')
-      }
+const colors = [
+  "#ffff0080",
+  "#FF000080",
+  "#00800080",
+  "#FFC0CB80",
+  "#0000EE80",
+  
+]
 
-      var documentHeight = $(document).height()
-      var windowHeight = $(window).height()
-
-      var difference = documentHeight - windowHeight
-      var percentage = 100 * pixelsFromTop / difference
-
-      console.log(percentage)
-
-      $('.bar').css('width', percentage + '%')
-    })
-
-
+$(canvas).click(function(e){
+   getPosition(e); 
 });
+
+var pointSize = 15;
+
+function getPosition(event){
+  var rect = canvas.getBoundingClientRect();
+  var x = event.clientX - rect.left;
+  var y = event.clientY - rect.top;
+
+  drawCoordinates(x,y);
+}
+
+function drawCoordinates(x,y){
+  ctx.fillStyle = colors[Math.floor(Math.random() * colors.length)];;
+  ctx.beginPath();
+  ctx.arc(x, y, pointSize, 0, Math.PI * 2, true);
+  ctx.fill();
+}
