@@ -7,6 +7,7 @@
 
   .mail-link {
     position: absolute;
+    z-index: 1;
     top: 16px;
     right: 16px;
 
@@ -43,6 +44,9 @@
     align-items: center;
 
     a {
+      position: relative;
+      z-index: 1;
+
       &:hover {
         &:before,
         &:after {
@@ -53,8 +57,8 @@
     }
   }
 
-  main {
-    position: relaitve;
-    z-index: 1;
-  }
+  // main {
+  //   position: relaitve;
+  //   z-index: 1;
+  // }
 }

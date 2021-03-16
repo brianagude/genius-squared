@@ -6,12 +6,11 @@ canvas.height = window.innerHeight
 const ctx = canvas.getContext('2d')
 
 const colors = [
-  "#ffff0080",
-  "#FF000080",
-  "#00800080",
-  "#FFC0CB80",
-  "#0000EE80",
-  
+  "rgba(255, 255, 0, 0.8)",
+  "rgba(255,192,203, 0.8)",
+  "rgba(0, 128, 0, 0.8)",
+  "rgba(0, 0, 255, 0.8)",
+  "rgba(255,0,0, 0.8)",
 ]
 
 $(canvas).click(function(e){
@@ -34,3 +33,13 @@ function drawCoordinates(x,y){
   ctx.arc(x, y, pointSize, 0, Math.PI * 2, true);
   ctx.fill();
 }
+
+$(document).ready(function() {
+    setTimeout(function() {
+       drawCoordinates(Math.random() * window.outerWidth,Math.random() * window.outerHeight)
+    }, 3000);
+});
+
+// $(document).ready(function(){
+//   setTimeout(drawCoordinates(300,300), 5000);
+// })
