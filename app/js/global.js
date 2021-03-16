@@ -36,10 +36,8 @@ function drawCoordinates(x,y){
 
 $(document).ready(function() {
     setTimeout(function() {
-       drawCoordinates(Math.random() * window.outerWidth,Math.random() * window.outerHeight)
-    }, 3000);
-});
+       drawCoordinates(Math.random() * window.innerWidth, Math.random() * window.innerHeight);
+       console.log('dot')
 
-// $(document).ready(function(){
-//   setTimeout(drawCoordinates(300,300), 5000);
-// })
+    }, 2000);
+});
