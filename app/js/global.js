@@ -1,10 +1,5 @@
 const canvas = document.querySelector('canvas')
-
-canvas.width = window.innerWidth
-canvas.height = window.innerHeight
-
 const ctx = canvas.getContext('2d')
-
 const colors = [
   "rgba(255, 255, 0, 0.8)",
   "rgba(255,192,203, 0.8)",
@@ -13,11 +8,14 @@ const colors = [
   "rgba(255,0,0, 0.8)",
 ]
 
-$(canvas).click(function(e){
-   getPosition(e); 
-});
-
 var pointSize = 15;
+
+function windowResize(){
+  canvas.width = window.innerWidth
+  canvas.height = window.innerHeight
+
+  console.log('window resized')
+}
 
 function getPosition(event){
   var rect = canvas.getBoundingClientRect();
@@ -34,9 +32,22 @@ function drawCoordinates(x,y){
   ctx.fill();
 }
 
-$(document).ready(function() {
-  setTimeout(function() {
-      drawCoordinates(Math.random() * window.innerWidth, Math.random() * window.innerHeight);
-  }, 2000);
+$(canvas).click(function(e){
+   getPosition(e); 
 });
+
+setInterval(function() {
+  drawCoordinates(Math.random() * window.innerWidth, Math.random() * window.innerHeight);
+}, 1500);
+
+
+$(window).resize(function() {
+  windowResize()
+});
+
+$(window).on( "orientationchange", function( event ) {
+  windowResize()
+});
+
+windowResize()
 

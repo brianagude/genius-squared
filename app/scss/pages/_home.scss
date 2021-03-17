@@ -5,6 +5,21 @@
   justify-content: center;
   min-height: 100vh;
 
+  canvas {
+    position: absolute;
+    // z-index: 1;
+  }
+
+  // main {
+  //   position: relative;
+  //   z-index: 2;
+  // }
+
+  // .media-block,
+  // .description {
+  //   pointer-events: all;
+  // }
+
   .mail-link {
     position: absolute;
     top: 16px;
@@ -46,6 +61,7 @@
     a {
       position: relative;
       z-index: 1;
+
       &:hover {
         &:before,
         &:after {
