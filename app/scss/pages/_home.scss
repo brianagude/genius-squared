@@ -5,20 +5,7 @@
   justify-content: center;
   min-height: 100vh;
 
-  canvas {
-    position: absolute;
-    // z-index: 1;
-  }
-
-  // main {
-  //   position: relative;
-  //   z-index: 2;
-  // }
-
-  // .media-block,
-  // .description {
-  //   pointer-events: all;
-  // }
+  canvas { position: absolute; }
 
   .mail-link {
     position: absolute;
@@ -42,9 +29,7 @@
       justify-content: center;
     }
 
-    img {
-      width: 136px; 
-    }
+    img { width: 136px; }
   }
 
   .description {

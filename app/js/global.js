@@ -13,8 +13,6 @@ var pointSize = 15;
 function windowResize(){
   canvas.width = window.innerWidth
   canvas.height = window.innerHeight
-
-  console.log('window resized')
 }
 
 function getPosition(event){
