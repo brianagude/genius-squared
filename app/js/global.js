@@ -8,7 +8,7 @@ const colors = [
   "rgba(255,0,0, 0.8)",
 ]
 
-var pointSize = 15;
+var pointSize = 14;
 
 function windowResize(){
   canvas.width = window.outerWidth

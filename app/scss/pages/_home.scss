@@ -3,7 +3,6 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  // min-height: 100vh;
 
   canvas {
     position: absolute;
@@ -25,14 +24,10 @@
   }
 
   .intro {
-    .media-block {
-      margin: auto;
-      display: flex;
-      justify-content: center;
-    }
-
     img {
       width: 136px;
+      margin: auto;
+      display: block;
     }
   }
 
