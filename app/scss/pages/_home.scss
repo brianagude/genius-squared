@@ -5,7 +5,9 @@
   justify-content: center;
   min-height: 100vh;
 
-  canvas { position: absolute; }
+  canvas {
+    position: absolute;
+  }
 
   .mail-link {
     position: absolute;
@@ -16,20 +18,22 @@
     &:hover {
       &:before,
       &:after {
-        content: '*';
+        content: "*";
         color: $pink;
       }
     }
   }
 
   .intro {
-    .media-block { 
-      margin: auto; 
+    .media-block {
+      margin: auto;
       display: flex;
       justify-content: center;
     }
 
-    img { width: 136px; }
+    img {
+      width: 136px;
+    }
   }
 
   .description {
@@ -50,7 +54,7 @@
       &:hover {
         &:before,
         &:after {
-          content: '*';
+          content: "*";
           color: $green;
         }
       }

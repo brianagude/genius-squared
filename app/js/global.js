@@ -11,8 +11,8 @@ const colors = [
 var pointSize = 15;
 
 function windowResize(){
-  canvas.width = window.innerWidth
-  canvas.height = window.innerHeight
+  canvas.width = window.outerWidth
+  canvas.height = window.outerHeight
 }
 
 function getPosition(event){
